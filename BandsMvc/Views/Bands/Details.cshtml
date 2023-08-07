@@ -1,4 +1,4 @@
-﻿@model WebApplication1.Models.Band[];
+﻿@model WebApplication1.Models.Band;
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -10,12 +10,8 @@
 <body>
     <main>
     <h2>Bands</h2>
-    <ul>
-        @foreach(var item in Model)
-            {
-                <li>@item.Name</li>
-            }
-        </ul>
+        <p> @Model.Name</p>
+        <p> Beskrivning: @Model.Description</p>
   </main>
 </body>
 </html>

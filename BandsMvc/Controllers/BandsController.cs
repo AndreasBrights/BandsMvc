@@ -24,6 +24,7 @@ namespace WebApplication1.Controllers
             var model = dataService.GetBandById(id);
             return View(model);
         }
+
     }
 }
 

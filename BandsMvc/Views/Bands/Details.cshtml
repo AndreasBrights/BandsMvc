@@ -1,5 +1,4 @@
-﻿@model WebApplication1.Models.Band;
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,9 +8,11 @@
 </head>
 <body>
     <main>
-    <h2>Bands</h2>
+    <h2>Band</h2>
         <p> @Model.Name</p>
+        <img src="@Model.ImagePath" class="img" alt="My image" />
         <p> Beskrivning: @Model.Description</p>
+        
   </main>
 </body>
 </html>

@@ -11,8 +11,8 @@ namespace BandsMvc
             var app = builder.Build();
 
             app.UseRouting();
-
-            app.UseEndpoints(endpoints => endpoints.MapControllers());
+			app.UseStaticFiles();
+			app.UseEndpoints(endpoints => endpoints.MapControllers());
 
             app.Run();
         }
